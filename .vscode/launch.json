@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug User App",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/app.out",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "preLaunchTask": "Build All",
+            "setupCommands": [
+                {
+                    "description": "Use Intel Syntax",
+                    "text": "set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
