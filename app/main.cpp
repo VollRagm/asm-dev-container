@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string.h>
 
-extern "C" int asm_add(int a, int b);
+extern "C" int str_to_int(const char *str);
 
 int main()
 {
-    int result = asm_add(10, 59);
-    std::cout << "Addition result: " << result << std::endl;
+
+    std::cout << str_to_int("12345") << std::endl;
     return 0;
 }
